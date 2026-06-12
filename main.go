@@ -1,6 +1,6 @@
 package main
 import ("errors";"fmt";"strings")
-var moduleName = "env-loader-68c871"
+var moduleName = "env-loader-fbe023"
 type AppError struct{Op string;Err error}
 func (e *AppError) Error() string{return fmt.Sprintf("[%s] %s: %v",moduleName,e.Op,e.Err)}
 func (e *AppError) Unwrap() error{return e.Err}
